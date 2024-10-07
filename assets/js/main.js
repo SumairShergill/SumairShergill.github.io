@@ -7,7 +7,8 @@
 !(function($) {
   "use strict";
 
-  // Nav Menu
+    // Nav Menu
+  /*
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var hash = this.hash;
@@ -48,7 +49,7 @@
       }
     }
   });
-
+   
   // Activate/show sections on load with hash links
   if (window.location.hash) {
     var initial_nav = window.location.hash;
@@ -61,8 +62,7 @@
         $(initial_nav).addClass('section-show');
       }, 350);
     }
-  }
-
+  } */
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
