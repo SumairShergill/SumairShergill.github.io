@@ -6,6 +6,14 @@
 */
 !(function($) {
   "use strict";
+    document.querySelectorAll('.card-container').forEach(container => {
+        container.addEventListener('click', () => {
+            const card = container.querySelector('.card');
+            card.classList.toggle('is-flipped');
+        });
+    });
+
+
 
     // Nav Menu
   /*
@@ -142,7 +150,7 @@
     });
 
   });
-
+ 
   // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {
     $('.venobox').venobox();
