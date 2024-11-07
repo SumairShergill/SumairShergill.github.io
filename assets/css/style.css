@@ -355,7 +355,7 @@ section .title h2 {
 }
 
 #social-links a {
-    font-size: 16px;
+    font-size: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,8 +364,8 @@ section .title h2 {
     line-height: 1;
     margin-right: 8px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
 }
 
     #social-links a:hover {
@@ -460,37 +460,53 @@ section .title h2 {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
-    height: 50px;
-    display: block;
-    background: none;
+/* Skills Section Styling */
+.skills-section {
+    padding: 40px;
+    
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10%;
 }
 
-    .skills .progress .skill {
-        padding: 0;
-        margin: 0 0 6px 0;
-        text-transform: uppercase;
-        display: block;
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
-        color: #fff;
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between each skill box */
+    justify-content: flex-start; /* Aligns the boxes left */
+}
+
+/* Skill Box Styling with Varying Sizes */
+.skill-box {
+    background-color: #353641; /* Darker box color */
+    color: #f0f0f0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+}
+
+    /* Varying Sizes for Skill Boxes */
+    .skill-box:nth-child(2n) {
+        flex: 1 1 15%; /* Narrower for some boxes */
     }
 
-        .skills .progress .skill .val {
-            float: right;
-            font-style: normal;
-        }
+    .skill-box:nth-child(3n) {
+        flex: 1 1 20%; /* Wider for some boxes */
+    }
 
-.skills .progress-bar-wrap {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: .9s;
-    background-color: #1c7d32;
-}
+    /* Hover Effects */
+    .skill-box:hover {
+        background-color: #44475a; /* Slightly lighter on hover */
+        transform: scale(1.1); /* Slightly larger on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
 
 /*--------------------------------------------------------------
 # Interests
@@ -1208,4 +1224,61 @@ section .title h2 {
     .card-container {
         flex: 1 1 calc(100% - 40px); /* 1 card per row on small screens */
     }
+}
+
+
+/* Centered layout */
+
+
+#contact-section .blurb {
+    font-size: 21px;
+    max-width: 70%;
+    margin: 20px 0 30px;
+    color: #d8d8dd;
+    text-align:center;
+}
+
+
+
+.resume-link {
+    background-color: #0ea732;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    transition: background-color 0.3s;
+}
+
+    .resume-link:hover {
+        background-color: #0ea136;
+    }
+
+.social-links-ends {
+    /*    margin-top: 40px;*/
+    display: flex;
+    padding-left:20px;
+    
+    justify-content: center;
+}
+
+#social-links-ends a {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+#social-links-ends a:hover {
+    background: #1c7d32;
 }
