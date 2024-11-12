@@ -4,16 +4,14 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-!(function($) {
-  "use strict";
+!(function ($) {
+    "use strict";
     document.querySelectorAll('.card-container').forEach(container => {
         container.addEventListener('click', () => {
             const card = container.querySelector('.card');
             card.classList.toggle('is-flipped');
         });
     });
-
-})($);
 
 
 
