@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website, designed to showcase my computer science projects, skills, and experience.
 
-🔗 **Check out the live site here:** [My Portfolio](https://your-website-link.com)
+🔗 **Check out the live site here:** [My Portfolio](https://sumairshergill.github.io/)
 
 ## Tech Stack
 - **HTML5**
