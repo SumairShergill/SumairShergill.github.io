@@ -802,7 +802,7 @@ section .title h2 {
 }
 
 .card-front {
-    background: #ededed;
+    background: #e5e4e2;
     z-index: 2;
     transform: rotateY(0deg);
     color: #000;
