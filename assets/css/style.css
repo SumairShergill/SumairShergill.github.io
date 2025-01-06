@@ -853,6 +853,8 @@ section .title h2 {
     color: #e6e6e9;
     text-align: center;
     justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -869,6 +871,8 @@ section .title h2 {
     margin-left: 20px;
     transition: background-color 0.3s;
     justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
     .resume-link:hover {
@@ -879,7 +883,6 @@ section .title h2 {
     /*    margin-top: 40px;*/
     display: flex;
     padding-left:20px;
-    
     justify-content: center;
 }
 
