@@ -852,6 +852,7 @@ section .title h2 {
     margin: 20px 0 30px;
     color: #e6e6e9;
     text-align: center;
+    justify-content: center;
 }
 
 
@@ -867,6 +868,7 @@ section .title h2 {
     margin-bottom: 20px;
     margin-left: 20px;
     transition: background-color 0.3s;
+    justify-content: center;
 }
 
     .resume-link:hover {
